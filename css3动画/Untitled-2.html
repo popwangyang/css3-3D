@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+
+
+<style>
+html,body{height:100%; width:100%;}
+.box{ perspective:80000px; border:#000 1px solid; position:absolute; left:0; right:0; bottom:0; top:0; margin:auto; background:url(img/bj3.jpg);}
+.main{ width:300px; height:400px; transform-style:preserve-3d;position:absolute; left:0; right:0; bottom:0; top:0; margin:auto; transition:all 30s; border:#000 1px solid;}
+.main>div{background:#666; width:300px; height:400px;position:absolute; left:0; right:0; bottom:0; top:0; margin:auto;}
+.main>div img{width:100%; height:100%;}
+.a{ transform:rotatey(90deg) translatez(-500px);}
+.a1{ transform:rotatey(90deg) translatez(-400px) translateY(-100px);}
+.b{ transform:rotatey(90deg) translatez(500px);}
+.b1{ transform:rotatey(90deg) translatez(400px) translateY(-100px);}
+.c{ transform:rotatey(45deg) translatez(-500px);}
+.c1{ transform:rotatey(45deg) translatez(-400px) translateY(-100px);}
+.d{ transform:rotatey(-45deg) translatez(-500px);}
+.d1{ transform:rotatey(-45deg) translatez(-400px) translateY(-100px);}
+.e{ transform:rotatey(45deg) translatez(500px);}
+.e1{ transform:rotatey(45deg) translatez(400px) translateY(-100px);}
+.f{ transform:rotatey(-45deg) translatez(500px);}
+.f1{ transform:rotatey(-45deg) translatez(400px) translateY(-100px);}
+.g{ transform:translatez(-500px);}
+.g1{ transform:translatez(-400px) translateY(-100px);}
+.h{ transform:translatez(500px);}
+.h1{ transform:translatez(400px) translateY(-100px);}
+.box:hover .main{transform: rotatey(360deg) rotatez(360deg);}
+</style>
+</head>
+
+<body>
+<div class="box">
+	<div class="main">
+    	<div class="a"><img src="img/pic1.jpg"></div>
+        <div class="b"><img src="img/pic2.png"></div>
+        <div class="c"><img src="img/pic3.png"></div>
+        <div class="d"><img src="img/pic4.png"></div>
+        <div class="e"><img src="img/pic5.jpg"></div>
+        <div class="f"><img src="img/pic6.png"></div>
+        <div class="g"><img src="img/pic7.png"></div>
+        <div class="h"><img src="img/pic8.png"></div>
+        <div class="a1"><img src="img/pic1.jpg"></div>
+        <div class="b1"><img src="img/pic2.png"></div>
+        <div class="c1"><img src="img/pic3.png"></div>
+        <div class="d1"><img src="img/pic4.png"></div>
+        <div class="e1"><img src="img/pic5.jpg"></div>
+        <div class="f1"><img src="img/pic6.png"></div>
+        <div class="g1"><img src="img/pic7.png"></div>
+        <div class="h1"><img src="img/pic8.png"></div>
+    </div>
+</div>
+</body>
+</html>

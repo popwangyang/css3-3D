@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+html,body{
+	height:100%;
+	}
+	
+body{
+	background:url(img/bj3.jpg) no-repeat center/cover;
+	}	
+	
+	
+img{
+	width:150px;
+	height:280px;
+	}
+	
+.box{
+	perspective:1200px;
+	width:800px;
+	height:400px;
+	margin:auto;
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	}
+		
+.main{
+	transform-style:preserve-3d;
+	width:150px;
+	height:280px;
+	margin:auto;
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	border:1px solid #000;
+	animation:myfirst 15s infinite linear;
+		
+	}
+
+.main>img{
+	position:absolute;
+	left:0;
+	top:0;
+	}
+
+img:nth-child(1){
+	transform:rotatey(90deg) translatez(-360px);
+	
+	}
+
+img:nth-child(2){
+	transform:rotatey(90deg) translatez(360px);
+	
+	}
+	
+img:nth-child(3){
+	transform:translatez(-360px);
+	
+	}
+	
+img:nth-child(4){
+	transform:translatez(360px);
+	
+	}	
+	
+img:nth-child(5){
+	transform:rotatey(30deg) translatez(-360px);
+	
+	}	
+	
+img:nth-child(6){
+	transform:rotatey(-30deg) translatez(-360px);
+	
+	}		
+img:nth-child(7){
+	transform:rotatey(-30deg) translatez(360px);
+	
+	}
+img:nth-child(8){
+	transform:rotatey(30deg) translatez(360px);
+	
+	}			
+img:nth-child(9){
+	transform:rotatey(60deg) translatez(-360px);
+	
+	}	
+	
+img:nth-child(10){
+	transform:rotatey(-60deg) translatez(-360px);
+	
+	}		
+img:nth-child(11){
+	transform:rotatey(-60deg) translatez(360px);
+	
+	}
+img:nth-child(12){
+	transform:rotatey(60deg) translatez(360px);
+	
+	}
+
+
+@keyframes myfirst{
+	0%{
+		transform:rotatex(0deg) rotatey(0);
+		}
+	25%{
+		transform:rotatex(15deg) rotatey(90deg);
+		}
+	50%{
+		transform:rotatex(0deg) rotatey(180deg);
+		}
+	75%{
+		transform:rotatex(-15deg) rotatey(270deg);
+		}		
+	100%{
+		transform:rotatex(0deg) rotatey(360deg);
+		}
+	}	
+	
+	
+</style>
+</head>
+
+<body>
+<div class="box">
+	<div class="main">
+		<img src="img/pic1.jpg" />
+        <img src="img/pic2.png" />
+        <img src="img/pic3.png" />
+        <img src="img/pic4.png" />
+        <img src="img/pic5.jpg" />
+        <img src="img/pic6.png" />
+        <img src="img/pic7.png" />
+        <img src="img/pic8.png" />
+        <img src="img/pic9.png" />
+        <img src="img/pic10.png" />
+        <img src="img/pic7.png" />
+        <img src="img/pic8.png" />
+	</div>
+</div>
+</body>
+</html>

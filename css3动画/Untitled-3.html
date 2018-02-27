@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	.box{width:1000px; height:500px;perspective:1200px;}
+	.box>div{width:300px; height:500px; position:absolute; left:0; right:0; bottom:0; top:0; margin:auto; transition:all 5s;}
+	
+	.box>div:nth-child(1){background:#ff0; transform:rotatey(-180deg); backface-visibility:hidden;}
+	.box:hover div:nth-child(1){ transform:rotateY(0);}
+	.box>div:nth-child(2){background:#000; backface-visibility:hidden;}
+	.box:hover div:nth-child(2){ transform:rotateY(180deg);}
+
+
+</style>
+
+
+</head>
+
+<body>
+<div class="box">
+<div></div>
+<div></div>
+</div>
+</body>
+</html>

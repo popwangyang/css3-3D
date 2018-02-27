@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+html,body{
+	height:100%;
+	}
+
+.box{
+	perspective:1200px;
+	width:800px;
+	height:400px;
+	border:1px solid #000;
+	margin:auto;
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	}
+
+
+.main{
+	transform-style:preserve-3d;
+	width:200px;
+	height:200px;
+	margin:auto;
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	transition:all 60s linear;
+	transform:rotatex(-30deg) rotatey(-70deg);
+	
+	}
+	
+.main>div{
+	width:200px;
+	height:200px;
+	border:1px solid #000;
+	background:rgba(0,0,0,.5);
+	color:#fff;
+	text-align:center;
+	line-height:200px;
+	font-size:50px;
+	position:absolute;
+	left:0;
+	top:0;
+	}
+		
+.left{
+	transform: rotatey(90deg) translatez(-100px);
+	}
+.right{
+	transform: rotatey(90deg) translatez(100px);
+	}			
+.top{
+	transform: rotatex(90deg) translatez(100px);
+	}
+.bottom{
+	transform: rotatex(90deg) translatez(-100px);
+	}	
+	
+.after{
+	transform:translatez(-100px);
+	}	
+.before{
+	transform:translatez(100px);
+	}	
+
+.box:hover .main{
+	transform:rotatex(360deg) rotatey(360deg) rotatez(360deg);
+	}
+
+
+
+
+</style>
+</head>
+
+<body>
+<div class="box"><!--舞台-->
+	<div class="main"><!--容器-->
+		<div class="left">左</div>
+        <div class="right">右</div>
+		<div class="top">上</div>
+        <div class="bottom">下</div>
+        <div class="before">前</div>
+        <div class="after">后</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>

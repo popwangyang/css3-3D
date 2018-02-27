@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+body,ul,li{margin:0;padding:0;}
+
+li{list-style:none;}
+body{
+	height:1000px;
+	background:url(img/2.jpg) no-repeat center/cover;
+	}
+
+
+.box{
+	width:768px;
+	height:768px;
+	margin:0 auto;
+	position:relative;
+	z-index:-20;
+	}
+
+.fsw{
+	width:768px;
+	height:768px;
+	background:url(img/fsw.png) no-repeat center top;
+	z-index:9;
+	animation:one 10s infinite linear;
+	
+}
+
+.big-title{
+	width:577px;
+	height:257px;
+	background:url(img/big-title.png) no-repeat center;
+	margin:auto;
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:9;
+	}
+	
+.title{
+	width:413px;
+	height:139px;
+	background:url(img/title.png) no-repeat center;
+	margin:auto;
+	position:absolute;
+	left:0;
+	top:251px;
+	right:0;
+	bottom:0;
+	z-index:9;
+	
+	}	
+
+.bracket{
+	width:358px;
+	height:529px;
+	background:url(img/bracket.png) no-repeat center;
+	position:absolute;
+	left:0;
+	top:50%;
+	right:0;
+	bottom:0;
+	margin:auto;
+	z-index:-10;
+	
+	}
+.bracketsmall{
+	width:247px;
+	height:490px;
+	background:url(img/bracketsmall.png) no-repeat center;
+	position:absolute;
+	left:0;
+	top:50%;
+	right:0;
+	bottom:0;
+	margin:auto;
+	}	
+	
+li{
+	width:130px;
+	height:170px;
+	position:absolute;
+	transform-origin:top center;
+	animation:two 10s infinite linear;
+
+	}	
+	
+li:nth-child(1){
+	background:url(img/boy.png);
+	left:333px;
+	top:12px;
+	}	
+	
+li:nth-child(2){
+	background:url(img/dog.png);
+	left:535px;
+	top:99px;
+	}		
+li:nth-child(3){
+	background:url(img/girl.png);
+	left:643px;
+	top:313px;
+	}		
+li:nth-child(4){
+	background:url(img/boy.png);
+	left:587px;
+	top:582px;
+	}	
+	
+li:nth-child(5){
+	background:url(img/dog.png);
+	left:333px;
+	top:695px;
+	}		
+li:nth-child(6){
+	background:url(img/girl.png);
+	left:89px;
+	top:608px;
+	}
+
+li:nth-child(7){
+	background:url(img/dog.png);
+	left:0px;
+	top:313px;
+	}		
+li:nth-child(8){
+	background:url(img/girl.png);
+	left:100px;
+	top:108px;
+	}	
+	
+@keyframes one{
+	from{
+		transform:rotate(0);
+		}
+	to{
+		transform:rotate(360deg);
+		}	
+	}
+	
+@keyframes two{
+	from{
+		transform:rotate(0);
+		}
+	to{
+		transform:rotate(-360deg);
+		}	
+	}		
+	
+	
+</style>
+</head>
+
+<body>
+<div class="box">
+	<div class="fsw">
+    	<ul>
+        	<li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="big-title"></div>
+    <div class="title"></div>
+    <div class="bracket"></div>
+    <div class="bracketsmall"></div>
+
+
+</div>
+</body>
+</html>
